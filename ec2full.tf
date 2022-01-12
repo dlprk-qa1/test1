@@ -8,7 +8,7 @@ provider "aws" {
 
 ## EC2
 
-### Network
+
 
 data "aws_availability_zones" "available" {}
 
