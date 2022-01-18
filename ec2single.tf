@@ -16,6 +16,8 @@ provider "aws" {
 
  #text
 #test
+
+#test2
  
 resource "aws_instance" "app_server" {
 	
