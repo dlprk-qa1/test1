@@ -15,6 +15,7 @@ provider "aws" {
 }
 
  #text
+#test
  
 resource "aws_instance" "app_server" {
 	#zs:skip=AC_AWS_0479 Please add a comment
