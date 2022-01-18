@@ -10,6 +10,8 @@ provider "aws" {
 
 ### Network
 
+##test
+
 data "aws_availability_zones" "available" {}
 
 resource "aws_vpc" "main" {
