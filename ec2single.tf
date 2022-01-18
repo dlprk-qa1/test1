@@ -18,9 +18,7 @@ provider "aws" {
 #test
  
 resource "aws_instance" "app_server" {
-	#zs:skip=AC_AWS_0479 Please add a comment
-	#zs:skip=AC_AWS_0153 Please add a comment
-	#zs:skip=AC_AWS_0480 Please add a comment
+	
   ami           = "ami-830c94e3"
   instance_type = "t2.micro"
   ingress_cidr_blocks = ["0.0.0.0/16"]
