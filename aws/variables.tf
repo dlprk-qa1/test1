@@ -1,3 +1,3 @@
 variable "region" {
-  default = "us-east-123"
+  default = "us-east-1234"
 }
