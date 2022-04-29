@@ -28,4 +28,4 @@ variable "az" {
 }
 variable "size" {
   default = 40
-}
+} 
