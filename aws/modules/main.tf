@@ -7,7 +7,7 @@ terraform {
   }
 }
 resource "aws_s3_bucket" "log_bucket"  {
-   bucket = var.bucketname
+   bucket = var.bucketname-"$(aws_s3_bucket.logging[0].id)}"
 }
 resource "aws_s3_bucket" "logging" {
   bucket = "examplebuckettftest"
