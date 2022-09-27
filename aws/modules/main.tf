@@ -14,7 +14,7 @@ resource "aws_s3_bucket" "logging" {
 }
 
 resource "aws_s3_bucket" "mfadelete" {
-  bucket = $(aws_s3_bucket.logging[0].id}
+  bucket = $(aws_s3_bucket.logging[0].id)}
   acl    = var.private
   versioning {
     mfa_delete = false
