@@ -7,7 +7,7 @@ terraform {
   }
 }
 resource "aws_s3_bucket" "log_bucket"  {
-   bucket = "var.bucketname-S3-Bucket"
+   bucket = "${var.bucketname}-S3-Bucket"
 }
 resource "aws_s3_bucket" "logging" {
   bucket = "examplebuckettftest"
