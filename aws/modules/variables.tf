@@ -30,4 +30,4 @@ variable "size" {
   default = 40
 }
 variable "bucketname"{
-  default="examplebucketfest"
+  default = "examplebucketfest"
