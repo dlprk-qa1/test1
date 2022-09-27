@@ -7,14 +7,14 @@ terraform {
   }
 }
 resource "aws_s3_bucket" "log_bucket"  {
-   bucket = var.bucketname."$(aws_s3_bucket.logging[0].id)}"
+   bucket = "{var.bucketname}"
 }
 resource "aws_s3_bucket" "logging" {
   bucket = "examplebuckettftest"
 }
 
 resource "aws_s3_bucket" "mfadelete" {
-  bucket = "$(aws_s3_bucket.logging[0].id)}"
+  bucket = "$(aws_s3_bucket.logging[0].id)"
   acl    = var.private
   versioning {
     mfa_delete = false
