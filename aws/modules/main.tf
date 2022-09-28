@@ -6,7 +6,7 @@ terraform {
     }
   }
 }
-resource "aws_s3_bucket" "log_bucket1"  {
+resource "aws_s3_bucket" "log_bucket"  {
    bucket = "examplebuckettftest"
 }
 resource "aws_s3_bucket" "logging" {
